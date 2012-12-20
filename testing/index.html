@@ -4,6 +4,7 @@
     <title>Testing io</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
     <script type="text/javascript" src='/socket.io/socket.io.js'></script>
@@ -38,17 +39,20 @@
         <!-- header -->
 
         <div data-role='content'>
+            
+            <div class='listDiv'>
+                <ul id='message' data-role='listview'>
+
+                </ul>
+            </div>
+
             <div>
                 <label for='messageText'>Your message</label>
                 <input type='text' id='messageText'/>
                 <button id='sendButton'>Send</button>
             </div>
 
-            <div class='listDiv'>
-                <ul id='message' data-role='listview'>
-
-                </ul>
-            </div>
+            
 
         </div>
     </div>

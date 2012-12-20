@@ -46,7 +46,7 @@ $(document).ready(function(){
 	//function: press enter for clicking button, input: id of input and button 
 	function enterForm(idInput,idButton){
 		$(idInput).on('keypress',function(e){
-			if (e.keycode == 13){
+			if (e.keyCode == 13){
 				$(idButton).click();
 			}
 		});
@@ -55,6 +55,7 @@ $(document).ready(function(){
 	//submit page
 	enterForm('#usernameText','#submitButton');
 	
+
 	//chat page when user enter message 
 	enterForm('#messageText','#sendButton');
 

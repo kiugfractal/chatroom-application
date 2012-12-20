@@ -34,6 +34,9 @@ $(document).ready(function(){
 	socket.on('message',function(message){
 		$('#message').append('<li>'+message+'</li>');
 		$('#message').listview('refresh');
+
+		//adding sound to the application when receive message from another user
+		$('#audioNoti').get(0).play();
 	}); 
 
 

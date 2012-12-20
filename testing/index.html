@@ -10,10 +10,17 @@
     <script type="text/javascript" src='/socket.io/socket.io.js'></script>
     <script type="text/javascript" src='myScript.js'></script>
    
-    
   </head>
-<body>
+<body>  
+        
+        
+
+        
 	    <div data-role='page' id='loginPage'>
+            
+
+        
+
         <div data-role='header' data-position='fixed'>
             <h1>Welcome to my chatroom</h1> 
         </div>
@@ -35,6 +42,9 @@
     <!-- Login page -->
 
     <div data-role='page' id='chatPage'>
+
+        <audio id='audioNoti' src="./public/resource/noti.mp3"  autobuffer></audio>
+
         <div data-role='header' data-position='fixed'>
             <h1>Let's chat</h1>
         </div>
@@ -58,5 +68,6 @@
 
         </div>
     </div>
+
 </body>
 </html>
